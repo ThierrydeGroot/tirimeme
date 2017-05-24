@@ -26,7 +26,7 @@
 
     <div class="main">
 
-        <!--V Tabel in Form V-->
+        <h3 style="text-align: center; margin-top: 20px">Hier kun je jouw favoriete afbeeldingen en video's kwijt!</h3>
 
         <form  action="uploadfiles.php" method="post" enctype="multipart/form-data">
 

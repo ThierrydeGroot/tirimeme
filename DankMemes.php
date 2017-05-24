@@ -62,7 +62,7 @@
                         $defposter = ucfirst($filePoster[1]);
                     }
                     echo "<h4>Gepost door: $defposter</h4></center>";
-                    echo "<br><hr><br>";
+                    echo "<br><hr style='width: 90%; margin: 0 auto;'><br>";
                    
                 }elseif($filetypes[1] == 'mp4'){
                     if(!empty($fileTitle[1])) {
@@ -75,7 +75,7 @@
                     if(!empty($filePoster[1])) {
                         $defposter = ucfirst($filePoster[1]);
                         echo "<h4>Gepost door: $defposter</h4></center>";
-                        echo "<br><hr><br>";
+                        echo "<br><hr style='width: 90%; margin: 0 auto;'><br>";
                     }
                 }
                 else{
@@ -86,7 +86,7 @@
                   echo "<a href='$file1' download>-> $file1</a><br>";
                     $defposter = ucfirst($filePoster[1]);
                     echo "<h4>Gepost door: $defposter</h4></center>";
-                    echo "<br><hr><br>";
+                    echo "<br><hr style='width: 90%; margin: 0 auto;'><br>";
                   $numberOfFiles = count($files1);
                 }
                 
