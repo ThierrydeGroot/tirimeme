@@ -57,7 +57,7 @@ echo "<style>
 
         .infield{
             width:200px;
-            height: 200px;
+            height: 100px;
             color: blue;
             background-color: azure;
             font-size: 24px;

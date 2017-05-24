@@ -94,7 +94,7 @@
 
         <form action="dateselect.php" method="post" enctype="multipart/form-data">
             Datum:
-            <input class="infield" type="text" name="date" value="<?php if(isset($_POST['klik'])) {
+            <input style="height: 50px; background-color: aqua" type="text" name="date" value="<?php if(isset($_POST['klik'])) {
 
                 $datumin = $_POST['date'];
                 if ($datumin != NULL) {
@@ -105,7 +105,7 @@
             }
             ?>">
             Map:
-            <input class="infield" type="text" name="map" placeholder="Map" value="<?php if(isset($_POST['klik'])) {
+            <input style="height: 50px; background-color: aqua;" type="text" name="map" placeholder="Map" value="<?php if(isset($_POST['klik'])) {
 
                 $mapin = $_POST['map'];
                 if ($mapin != NULL) {
@@ -115,8 +115,8 @@
                 echo NULL;
             }
             ?>">
-            <input class="infield" type="submit" name="klik" value="Verstuur">
-            <input class="infield" type="submit" name="reset" value="Reset">
+            <input style="height: 50px; background-color: aqua; width: 100px;"  type="submit" name="klik" value="Verstuur">
+            <input style="height: 50px; background-color: aqua; width: 100px;"  type="submit" name="reset" value="Reset">
         </form>
         
               

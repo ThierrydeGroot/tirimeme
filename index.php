@@ -33,7 +33,7 @@
             <table>
 
 
-                        <td><input class="infield" type="file" name="upload" multiple="multiple"></td>
+                        <td><input style="height: 50px; background-color: aqua" type="file" name="upload" multiple="multiple"></td>
                         <td><input class="infield" type="submit" name="reset" value="Reset"></td>
                         <td><input class="infield" type="submit" name="turbo" value="Uploaden!"></td>
 
