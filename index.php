@@ -6,7 +6,7 @@
 
     <?php
 
-    include 'style.php';
+    include 'hidden.style.php';
 
     ?>
     <?php
@@ -685,21 +685,17 @@
 
     </div>
 
-    <div class="rightmenu">
 
-        <ul>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="showdata.php">Showdata</a></li>
-            <li><a href="dateselect.php">Datefolderselect</a></li>
-            <li><a href="./blab84" target="_blank">Tiri Chat</a></li>
-            <li>Opties</li>
-            <li>Opties</li>
-            <li>Opties</li>
-            <li>Opties</li>
-            <li>Opties</li>
-        </ul>
+<?php
 
-    </div>
+
+    include 'hidden.optionmenu.php';
+
+    ?>
+
+
+
+
 
     <div class="foot">
         <?php
