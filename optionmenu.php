@@ -1,3 +1,9 @@
+<?php
+
+include 'style.php';
+
+?>
+
 
 <div class="rightmenu">
 <?php
