@@ -635,6 +635,7 @@
             if (isset($_POST['turbo'])) {
 
 
+
                 if(isset($_FILES['upload'])) {
 
 
@@ -655,6 +656,14 @@
                                 mkdir("./$dirname", 0777);
                                 if (!is_dir("./$dirname/uploads")) {
                                     mkdir("./$dirname/uploads", 0777);
+                                    echo 'Map voor uploads aangemaakt';
+                                }
+                            }
+                            if (is_dir("./$dirname")) {
+
+                                if (!is_dir("./$dirname/uploads")) {
+                                    mkdir("./$dirname/uploads", 0777);
+                                    echo 'Map voor uploads aangemaakt';
                                 }
                             }
                             $pupe = substr_count($file_name, '.');
