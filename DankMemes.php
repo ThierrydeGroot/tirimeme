@@ -53,10 +53,14 @@
                     if(!empty($fileTitle[1])) {
                         $deftitle = ucfirst($fileTitle[1]);
                         echo "<center><h3>$deftitle</h3>";
+
+
+                        echo "<a href='$file1' download><img src='$file1' title='$fileTitle[1]' width='500'></a><br>";
+                        $numberOfFiles = count($files1);
                     }
-                   echo "<a href='$file1' download><img src='$file1' title='$fileTitle[1]' width='500'></a><br>";
-                   $numberOfFiles = count($files1);
-                   $defposter = ucfirst($filePoster[1]);
+                    if(!empty($filePoster[1])) {
+                        $defposter = ucfirst($filePoster[1]);
+                    }
                     echo "<h4>Gepost door: $defposter</h4></center>";
                    
                 }elseif($filetypes[1] == 'mp4'){
@@ -66,8 +70,10 @@
                     }
 
                     echo "<video width='500' controls><source src='$file1' type='video/mp4'></video><br><a href='$file1' download>^Download video^</a><br>";
-                    $defposter = ucfirst($filePoster[1]);
-                    echo "<h4>Gepost door: $defposter</h4></center>";
+                    if(!empty($filePoster[1])) {
+                        $defposter = ucfirst($filePoster[1]);
+                        echo "<h4>Gepost door: $defposter</h4></center>";
+                    }
                 }
                 else{
                     if(!empty($fileTitle[1])) {
