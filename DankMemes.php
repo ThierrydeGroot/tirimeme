@@ -52,7 +52,7 @@
                 if($filetypes[1] == 'jpg' ||$filetypes[1] == 'png' || $filetypes[1] == 'jpeg' || $filetypes[1] == 'JPG' || $filetypes[1] == 'gif'){
                     if(!empty($fileTitle[1])) {
                         $deftitle = ucfirst($fileTitle[1]);
-                        echo "<center><h3>$deftitle</h3>";
+                        echo "<center><h3>$deftitle</h3><br>";
 
 
                         echo "<a href='$file1' download><img src='$file1' title='$fileTitle[1]' width='500'></a><br>";
@@ -62,27 +62,31 @@
                         $defposter = ucfirst($filePoster[1]);
                     }
                     echo "<h4>Gepost door: $defposter</h4></center>";
+                    echo "<br><hr><br>";
                    
                 }elseif($filetypes[1] == 'mp4'){
                     if(!empty($fileTitle[1])) {
                         $deftitle = ucfirst($fileTitle[1]);
-                        echo "<center><h3>$deftitle</h3>";
+                        echo "<center><h3>$deftitle</h3><br>";
+                        echo "<video width='500' controls><source src='$file1' type='video/mp4'></video><br><a href='$file1' download>^Download video^</a><br>";
+
                     }
 
-                    echo "<video width='500' controls><source src='$file1' type='video/mp4'></video><br><a href='$file1' download>^Download video^</a><br>";
                     if(!empty($filePoster[1])) {
                         $defposter = ucfirst($filePoster[1]);
                         echo "<h4>Gepost door: $defposter</h4></center>";
+                        echo "<br><hr><br>";
                     }
                 }
                 else{
                     if(!empty($fileTitle[1])) {
                         $deftitle = ucfirst($fileTitle[1]);
-                        echo "<center><h3>$deftitle</h3>";
+                        echo "<center><h3>$deftitle</h3><br>";
                     }
                   echo "<a href='$file1' download>-> $file1</a><br>";
                     $defposter = ucfirst($filePoster[1]);
                     echo "<h4>Gepost door: $defposter</h4></center>";
+                    echo "<br><hr><br>";
                   $numberOfFiles = count($files1);
                 }
                 

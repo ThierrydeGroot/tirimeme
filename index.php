@@ -26,6 +26,7 @@
 
     <div class="main">
 
+        <p class="mid">Welkom op Tiri's MemeHaus. Hier komen al je dromen uit.</p>
 
     </div>
 
