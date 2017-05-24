@@ -45,16 +45,38 @@
             
             foreach (array_reverse($files1) as $file1) {
                 $filetypes = explode('.',$file1);
-                
+                $fileTitle = explode('(+)',$file1);
+                $filePoster = explode('{-}',$file1);
+
+
                 if($filetypes[1] == 'jpg' ||$filetypes[1] == 'png' || $filetypes[1] == 'jpeg' || $filetypes[1] == 'JPG' || $filetypes[1] == 'gif'){
-                   echo "<a href='$file1' download><img src='$file1' title='$filetypes[0]' width='500'></a><br>"; 
+                    if(!empty($fileTitle[1])) {
+                        $deftitle = ucfirst($fileTitle[1]);
+                        echo "<center><h3>$deftitle</h3>";
+                    }
+                   echo "<a href='$file1' download><img src='$file1' title='$fileTitle[1]' width='500'></a><br>";
                    $numberOfFiles = count($files1);
+                   $defposter = ucfirst($filePoster[1]);
+                    echo "<h4>Gepost door: $defposter</h4></center>";
                    
                 }elseif($filetypes[1] == 'mp4'){
-                    echo "<video width='500' controls><source src='$file1' type='video/mp4'></video><br><a href='$file1' download>^Download video^</a><br>"; 
+                    if(!empty($fileTitle[1])) {
+                        $deftitle = ucfirst($fileTitle[1]);
+                        echo "<center><h3>$deftitle</h3>";
+                    }
+
+                    echo "<video width='500' controls><source src='$file1' type='video/mp4'></video><br><a href='$file1' download>^Download video^</a><br>";
+                    $defposter = ucfirst($filePoster[1]);
+                    echo "<h4>Gepost door: $defposter</h4></center>";
                 }
                 else{
+                    if(!empty($fileTitle[1])) {
+                        $deftitle = ucfirst($fileTitle[1]);
+                        echo "<center><h3>$deftitle</h3>";
+                    }
                   echo "<a href='$file1' download>-> $file1</a><br>";
+                    $defposter = ucfirst($filePoster[1]);
+                    echo "<h4>Gepost door: $defposter</h4></center>";
                   $numberOfFiles = count($files1);
                 }
                 
@@ -71,6 +93,13 @@
         $mapin = NULL;
 
     }
+
+
+
+
+
+
+
 
     ?>
 
@@ -92,7 +121,7 @@
 
 
 
-        <form action="dateselect.php" method="post" enctype="multipart/form-data">
+        <form action="DankMemes.php" method="post" enctype="multipart/form-data">
             Datum:
             <input style="height: 50px; background-color: aqua" type="text" name="date" value="<?php if(isset($_POST['klik'])) {
 
@@ -142,7 +171,7 @@
 
             ?></p>
         </div>
-        <br><br><br>
+        <br>
             <iframe width="85%" height="350px" src="http://papadingo.nl/tiri/blab84/blab.php" style="margin-left:7%">
                 
             </iframe>
