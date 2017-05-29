@@ -1,5 +1,10 @@
-Ayoo bastaarden!
 
+ +------------------+
+ | Ayoo bastaarden! |
+ |      *****       |
+ |                  |
+ |                  |
+ +------------------+
 
 
 Note -> ik heb de loop voor het optiemenu zo gemaakt dat als je 'hidden.'
