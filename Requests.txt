@@ -1,0 +1,5 @@
+->Nieuwe banner
+->StufiCountdown verbeteren - Piraato
+->Bootstrap --> dus ook nieuwe templates en style
+->Verbeterde Memeweergave
+->Creatieve pagina's
